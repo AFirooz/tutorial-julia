@@ -23,7 +23,7 @@ jobs:
           year: 2022
           dayRegex: '(?<=https:\/\/img\.shields\.io\/badge\/Day%20📅-)[0-9]+(?=-blue)'                   # Regular expression that finds the content of the day badge in your file.
           starsRegex: '(?<=https:\/\/img\.shields\.io\/badge\/Stars%20⭐-)[0-9]+(?=-yellow)'             # Regular expression that finds the content of the stars badge in your file.
-          daysCompletedRegex: '(?<=https:\/\/img\.shields\.io\/badge\/Days%20Completed%20✅-)[0-9]+(?=-red)'  # Regular expression that finds the content of the days completed badge iun your file.
+          daysCompletedRegex: '(?<=https:\/\/img\.shields\.io\/badge\/Days%20Completed%20✅-)[0-9]+(?=-darkgreen)'  # Regular expression that finds the content of the days completed badge iun your file.
           
 #         Optional inputs:
 #         
