@@ -63,8 +63,7 @@ open("Week_2/Inputs/day_12.txt", "r") do f
     # Part B - Consider any other points on altitude 'a'
     shortest_routes = Vector{Int64}()
     for equiv_start_loc in findall(x->x=='a', heights)
-        heights[equiv_start_loc] = 'S'
-        heights[end_point] = 'E'
+        heights[equiv_start_loc] = 'S'; heights[end_point] = 'E'
 
         alt_step_counts = traverse_region(heights)
         push!(shortest_routes, alt_step_counts[end_point])
