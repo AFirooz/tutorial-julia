@@ -13,7 +13,7 @@ function find_neighbours(point, max_indices)
     return neighbours
 end
 
-function travsere_region(A::Array)
+function traverse_region(A::Array)
     global step_count = fill(prod(size(A)), size(A))  # Fill step count with maximal values
     visited = zeros(size(A));
     queue = Vector{Vector{Int64}}()
@@ -58,7 +58,7 @@ open("Week_2/Inputs/day_12.txt", "r") do f
     end
 
     end_point = findfirst(x->x=='E', heights)
-    step_counts = travsere_region(heights)
+    step_counts = traverse_region(heights)
     
     # Part B - Consider any other points on altitude 'a'
     shortest_routes = Vector{Int64}()
@@ -66,7 +66,7 @@ open("Week_2/Inputs/day_12.txt", "r") do f
         heights[equiv_start_loc] = 'S'
         heights[end_point] = 'E'
 
-        alt_step_counts = travsere_region(heights)
+        alt_step_counts = traverse_region(heights)
         push!(shortest_routes, alt_step_counts[end_point])
     end
                 
