@@ -1,7 +1,4 @@
-# Advent of Code 2022
+> Under dev
 
-![](https://img.shields.io/badge/Day%20📅-25-blue)
-![](https://img.shields.io/badge/Stars%20⭐-50-yellow)
-![](https://img.shields.io/badge/Days%20Completed%20✅-25-darkgreen)
-
-Repository for my participation in the [Advent of Code 2022](https://adventofcode.com/2022) challenge.
+## TODO
+- [] what is [Advent of Code 2022](https://adventofcode.com/2022) challenge?
